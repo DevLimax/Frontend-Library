@@ -4,37 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="logo">
-        <h1>Multimeios</h1>
-        <p>A magia de uma vasta coleção de livros</p>
-    </div>
-
-    <div class="credits">
-        <a href="https://www.linkedin.com/in/joaopedrolima12" target="_blank" class="iconCredits linkedin"><ion-icon name="logo-linkedin"></ion-icon></a>
-        <a href="https://github.com/DevLimax" target="_blank" class="iconCredits git"><ion-icon name="logo-github"></ion-icon></a>
-    </div>
-
     <div class="wrapper">
+
+        <div class="logo">
+            <h1>Multimeios</h1>
+            <p>A magia de uma vasta coleção de livros</p>
+        </div>  
+
+        <div class="welcome">
+            <h1>Bem-vindo</h1>
+            <h2>Ao</h2>
+            <h3>Multimeios</h3>
+        </div>
+
         <div class="form-box login">
             <h2>Sign In</h2>
             <form action="">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person"></ion-icon></span>
-                    <input type="text" required>
+                    <input id="userinput" type="text" required>
                     <label>Email ou Nome de usuário</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
+                    <input id="passwordLogin" type="password" required>
                     <label>Senha</label>
                 </div>
                 <div class="remember-forgort">
                     <a href="">Esqueceu a senha?</a>
                 </div>
-                <button type="submit" class="btn">Logar</button>
+                <button id="btn-login" type="submit" class="btn">Logar</button>
                 <div class="login-register">
                     <p>Não tem uma conta?</p>
                     <a href="#" class="register-link">Registrar-se</a>
@@ -46,40 +48,40 @@
             <form action="">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person"></ion-icon></span>
-                    <input type="text" required>
+                    <input id="first_name" type="text" required>
                     <label>Primeiro Nome</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="person"></ion-icon></span>
-                    <input type="text" required>
+                    <input id="last_name" type="text" required>
                     <label>Sobrenome</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="call"></ion-icon></span>
-                    <input type="text" value="+55" required>
+                    <input id="phone" type="text" value="+55" required>
                     <label>Telefone</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="text" required>
+                    <input id="email" type="email" required>
                     <label>Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="create"></ion-icon></span>
-                    <input type="text">
+                    <input id="enrollment" type="text" required>
                     <label>Matricula</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
+                    <input id="password" type="password" required>
                     <label>Senha</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
+                    <input id="confirm_password" type="password" required>
                     <label>Confirmar Senha</label>
                 </div>
-                <button type="submit" class="btn">Logar</button>
+                <button id="btn-register" type="submit" class="btn">Registrar</button>
                 <div class="login-register">
                     <p>Ja tem uma conta?</p>
                     <a href="#" class="login-link">Logar</a>
@@ -87,8 +89,16 @@
             </form>
         </div>
     </div>
+
+    <div class="credits">
+        <a href="https://www.linkedin.com/in/joaopedrolima12" target="_blank" class="iconCredits linkedin"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://github.com/DevLimax" target="_blank" class="iconCredits git"><ion-icon name="logo-github"></ion-icon></a>
+    </div>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/validate_register.js" ></script>
+    <script src="scripts/validate_login.js" ></script>
 </body>
 </html>
